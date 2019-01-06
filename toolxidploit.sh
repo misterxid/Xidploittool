@@ -178,6 +178,7 @@ clear
 sleep 2
 
 figlet MR_XID  | lolcat
+sleep 2
  
 echo                      " [•]===><===<>===><===<>===><===<>==><==[]"|lolcat
 echo                      " [•]Author   :  MR_XiD                  []"|lolcat
@@ -321,6 +322,7 @@ fi
 if [ $sf = 9 ] || [ $sf = 9 ]
 then 
 clear
+apt update && apt upgrade -y
 git clone https://github.com/TU4NN1CKN4M3/TOOLSv2
 cd TOOLSv2
 sh TU4NN1CKN4M3.sh
